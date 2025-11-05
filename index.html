@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayolad miniproject</title>  
+    <link href="styles.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+    <header>
+        <h3><img src="images/logo.png" alt="logo"> Kayolad's Portfolio </h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h3>Introduction</h3>
+            <p>I am kayolad from coursera</p>
+            <p>I am a gentle man</p>
+            <p>I am about 1.55m tall</p>
+            <p>I am hoping to be the best software developer</p>
+            
+        </section>
+        <section>
+            <h3>Hobbies</h3>
+            <p>Cycling</p>
+            <p>Swimming</p>
+            <p>Programming in python</p>
+        </section>
+        <section>
+            <h3>Cities visited</h3>
+            <p>Paris</p>
+            <p>London</p>
+            <p>Glassgow</p>
+        </section>
+        <aside>
+            <h3>My skills</h3>
+            <ul>
+                <li>C# programming</li>
+                <li>html programming</li>
+                <li>CSS programming</li>
+                <li>Javascript programming</li>
+            </ul>
+        </aside>
+    </main>
+
+   <div class="filter-bar" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn" onclick="filterProjects('all')" aria-pressed="true">All</button>
+        <button class="filter-btn" onclick="filterProjects('web')" aria-pressed="false">Web</button>
+        <button class="filter-btn" onclick="filterProjects('mobile')" aria-pressed="false">Mobile</button>
+        <button class="filter-btn" onclick="filterProjects('design')" aria-pressed="false">Design</button>
+      </div> 
+      <main>
+      <!-- Projects -->
+      <article class="project" data-category="web">
+        <h3>Project One (Web)</h3>
+        <figure>
+          <img src="images/img1.png" alt="tech picture">
+          <figcaption>
+          I have designed and developed a responsive website <br>
+          for coffee order using php, JavaScript and CSS and html
+        </figcaption>
+        </figure>
+      </article>
+      <article class="project" data-category="mobile">
+        <h3>Project Two (Mobile)</h3>
+        <figure>
+          <img src="images/img2.png" alt="Screenshot of Project Two">
+          <figcaption>I have designed and developed <br>
+            a cross-platform mobile app calculator using xamarin, xml and C#.</figcaption>
+        </figure>
+      </article>
+      <article class="project" data-category="mobile">
+        <h3>Project Two (Mobile)</h3>
+        <figure>
+          <img src="images/img3.png" alt="Screenshot of Project Two">
+          <figcaption>I have designed and developed a responsive<br> 
+            digital portfolio website. using html, css and JavaScript.
+          </figcaption>
+        </figure>
+      </article>
+      </main> 
+      <section id="contact"> 
+      <fieldset><legend>Contact</legend>      
+      <form aria-label="Contact form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      </fieldset> 
+    </section>
+  
+
+    <footer>&copy2025kayolad@courserawebdev </footer>
+</body>
+<script src="script.js"></script>
+</html>
